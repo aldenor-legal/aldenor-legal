@@ -22,13 +22,13 @@
         var acceptBtn = document.getElementById('accept-compliance');
 
         if (banner && acceptBtn) {
-            if (!localStorage.getItem('anchorpointcompliance_disclaimer_accepted')) {
+            if (!localStorage.getItem('aldenor_disclaimer_accepted')) {
                 banner.style.display = 'block';
             }
 
             acceptBtn.addEventListener('click', function () {
                 banner.style.display = 'none';
-                localStorage.setItem('anchorpointcompliance_disclaimer_accepted', 'true');
+                localStorage.setItem('aldenor_disclaimer_accepted', 'true');
             });
         }
     });
